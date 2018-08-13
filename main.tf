@@ -14,7 +14,10 @@ resource "github_repository" "example" {
   description = "My awesome codebase"
 }
 
-resource "random_pet" "repo" {}
+resource "random_pet" "repo" {
+  length    = "4"
+  separator = "-"
+}
 
 resource "github_repository" "example2" {
   name        = "${random_pet.repo.id}"
