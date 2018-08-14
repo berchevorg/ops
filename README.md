@@ -34,9 +34,12 @@ rbenv local 2.3.1
 rbenv versions
 
 add the following to your .bash_profile:
-  eval "$(rbenv init -)"
-  true
-  export PATH="$HOME/.rbenv/bin:$PATH"
+
+```bash
+eval "$(rbenv init -)"
+true
+export PATH="$HOME/.rbenv/bin:$PATH"
+```
 
 gem install bundler
 
