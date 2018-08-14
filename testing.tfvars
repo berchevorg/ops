@@ -1,1 +1,1 @@
-repo = "example-kitchen1"
+repo = "example-kitchen"
