@@ -2,3 +2,6 @@
 priv/
 terraform.tfstate*
 .DS_Store
+.kitchen/
+.ruby-version
+Gemfile.lock
