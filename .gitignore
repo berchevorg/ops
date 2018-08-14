@@ -1,3 +1,6 @@
 .terraform/
 priv/
+.kitchen/
 terraform.tfstate*
+.ruby-version
+Gemfile.lock
