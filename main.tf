@@ -19,13 +19,3 @@ resource "github_repository" "example" {
   name        = "${var.repo}"
   description = "My awesome codebase"
 }
-
-resource "random_pet" "repo" {
-  length    = "4"
-  separator = "-"
-}
-
-resource "github_repository" "example2" {
-  name        = "${random_pet.repo.id}"
-  description = "My awesome pet project"
-}
