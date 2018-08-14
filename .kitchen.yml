@@ -1,0 +1,22 @@
+---
+driver:
+  name: terraform
+  variable_files:
+    - testing.tfvars
+
+provisioner:
+  name: terraform
+
+platforms:
+  - name: ubuntu
+
+verifier:
+  name: terraform
+  reporter: doc
+  groups:
+    - name: default
+      controls:
+        - check_website
+
+suites:
+  - name: default
