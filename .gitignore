@@ -1,3 +1,4 @@
 .terraform/
 priv/
 terraform.tfstate*
+.DS_Store
