@@ -8,15 +8,13 @@ provisioner:
   name: terraform
 
 platforms:
-  - name: ubuntu
+  - name: github
 
 verifier:
   name: terraform
-  reporter: doc
-  groups:
+  systems:
     - name: default
-      controls:
-        - check_website
+      backend: local
 
 suites:
   - name: default
