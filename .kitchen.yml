@@ -15,6 +15,7 @@ verifier:
   reporter: doc
   groups:
     - name: default
+      backend: local
       controls:
         - check_website
 
